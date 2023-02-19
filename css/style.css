@@ -2,9 +2,15 @@
     --preto: #000000;
     --branco: #FFFFFF;
     --cinza-linha: #C4C4C4;
-    --cordefundo_pergunta: #FEEAEA;
+    --container-pergunta: #FEEAEA;
+    --container-despedida: #FFF1FE;
     --fonte-01: 'Poppins';
     --fonte-02: 'Montserrat';
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
 }
 body{
     width: min(100% - 20px, 600px);
@@ -27,12 +33,15 @@ header {
     margin-left: 5rem ;
     margin-right: 5rem;
 }
+
 h1 {
     font-family: var(--fonte-01);
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
     line-height: 140%;
+    margin-bottom: 2rem;
+
 }
 h2 {
   
@@ -41,6 +50,10 @@ h2 {
     font-weight: 600;
     font-size: 27px;
     line-height: 140%;
+
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+
 }
 .saudacao {
     font-family: var(--fonte-01);
@@ -48,6 +61,7 @@ h2 {
     font-weight: 600;
     font-size: 1rem;
     line-height: 140%;
+    margin-bottom: 0.5rem;
 }
 p {
     font-family: var(--fonte-01);
@@ -55,6 +69,7 @@ p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
+    margin-bottom: 1.4rem;
 } 
 button {
     font-family: var(--fonte-01);
@@ -86,10 +101,11 @@ button {
     align-items: flex-start;
     padding: 2.25rem 5rem;
 
-    width: 600px;
-    height: 148px;
+    width: 100%;
+    margin-left: -5rem;
+    margin-bottom: 2.5rem;
 
-    background: var(--cordefundo_pergunta);
+    background: var(--container-pergunta);
 }
 .pergunta {
     font-family: var(--fonte-01);
@@ -111,6 +127,7 @@ label {
     align-items: flex-start;
     padding: 1.5rem 0rem 1.5rem 1rem;
     gap: 10px;
+    margin-bottom: 1.5rem;
 
     width: 440px;
     height: 72px;
@@ -132,12 +149,14 @@ label {
     flex-direction: column;
     align-items: flex-start;
     padding: 32px 80px;
-    gap: 8px;
+    justify-content: center;
 
-    width: 600px;
-    height: 223px;
+    width: 100%;
+    margin-left: -5rem;
+    margin-top: 2.5;
+   
 
-    background: #FFF1FE;
+    background: var(--container-despedida);
 
 }
 
@@ -173,6 +192,7 @@ label {
     color: var(--branco);
 }
 .links_rodape {
+    gap: 20px 10px;
     display: flex;
     left: 4.13%;
     right: 4.14%;
