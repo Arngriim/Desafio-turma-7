@@ -23,8 +23,8 @@ header {
     padding: 22px 107px 12px 66px;
     background: var(--preto);
 }
-.logo {
-    width: min(100% - 20px, 600px);
+.logo img{
+    width: min(100% 149px);
     align-self: center;
     text-align: left;
     margin: auto;
